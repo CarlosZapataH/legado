@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'variables';
+@import 'scaffolding';
+@import 'mixins';
+//@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/grid";
+

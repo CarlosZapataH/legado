@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body class="carrito">
+    <!-- <div id="root">
+      <h1>darta</h1>
+    </div> -->
+    <header class="header">
+        <div class="x-container">
+            <div class="content">
+                <div class="content__left">
+                    <img src="./assets/Legado_Logo_nuevo-sm.png" alt="Ceregen logo" />
+                </div>
+                <div class="content__right">
+                    <div class="hamburguesa only-mobile" id="hamburguesa"><span></span></div>
+                    <nav class="only-desktop">
+                        <a href="#estrategia" class="scrolling">LEGADO</a>
+                        <a href="#quehacemos" class="scrolling">SEDES</a>
+                        <a href="#proyectos" class="scrolling">NOTICIAS</a>
+                        <a href="#clientes" class="scrolling">EVENTOS</a>
+                        <!-- <a href="tel:+012535303">
+                <b>Neosalud: 01 253 5303</b>
+              </a> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="menu only-mobile" id="menu">
+        <nav>
+            <a href="#estrategia" class="scrolling">LEGADO</a>
+            <a href="#quehacemos" class="scrolling">SEDES</a>
+            <a href="#proyectos" class="scrolling">NOTICIAS</a>
+            <a href="#clientes" class="scrolling">EVENTOS</a>
+        </nav>
+    </section>
+    <div class="wrapper_sections">
+        <section class="content" id="content">
+            <div class="banner">
+                <div class="x-container">
+                    <h1><i class="bi bi-cart3"></i> Resumen de compra</h1>
+                </div>
+            </div>
+            <div class="x-container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="event-sm">
+                            <div class="event-sm__img">
+                                <img src="https://legado.gob.pe/images/media/max_325x325/2022_10/1664999321-continua-la-venta-de-entradas-a-la-fiesta-mas-grande-del-para-atletismo-el-open-lima-2022.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="event-sm__text">
+                                <div class="type">EVENTO</div>
+                                <div class="name">FINA World Junior Running Championships Lima</div>
+                            </div>
+                        </div>
+                        <div class="box-users">
+                            <div class="sub-title">
+                                <h2>PARTICIPANTES REGISTRADOS</h2>
+                                <hr>
+                            </div>
+                            <div class="users">
+                                <div class="user">
+                                    <div>
+                                        <div class="user__name">
+                                            Alberto Sanchez Baudazio
+                                        </div>
+                                        <div class="user__document">
+                                            47389857
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn-edit" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#userModal">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div>
+                                        <div class="user__name">
+                                            Alberto Sanchez Baudazio
+                                        </div>
+                                        <div class="user__document">
+                                            47389857
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn-edit" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#userModal">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-details">
+                            <div class="sub-title">
+                                <h2>DETALLES DEL EVENTO</h2>
+                                <hr>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="label">
+                                            Modalidad
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text">
+                                            <div class="tag color-green">
+                                                <i class="bi bi-people-fill"></i>
+                                                Presencial
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="label">
+                                            Fecha
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text">01 de Setiembre</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="label">
+                                            Horario
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text">03:00 pm</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="label">
+                                            Lugar
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text">
+                                            <div>
+                                                Polideportivo Villa el Salvador
+                                            </div>
+                                            <div class="text-sub">
+                                                Lima, PE
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="box-map">
+                            <span>Mapa</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="box-ticket" id="column-form">
+                            <div class="wrapper-tickets" id="wrapper-form">
+                                <form>
+                                    <table>
+                                        <tr>
+                                            <th>TICKET</th>
+                                            <th>CANTIDAD</th>
+                                            <th>SUBTOTAL</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="values">
+                                                    General
+                                                    <div class="sub">
+                                                        Ingresa a la zona general con asiento.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                x02
+                                            </td>
+                                            <td>
+                                                S/20.00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="values">
+                                                    Combo familiar
+                                                    <div class="sub">
+                                                        Dos adultos y dos niños para zona general.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                x01
+                                            </td>
+                                            <td>
+                                                S/30.00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="sub">
+                                                    Total a pagar
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                S/50.00
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="mb-3">
+                                        <button class="button-x" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#niubizModal">
+                                            Continuar al pago
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5" id="userModalLabel">
+                        <i class="bi bi-person"></i>
+                        <span class="accordion-title">Participante 1 </span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="lastname" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="birtdate" class="form-label">Fecha de nacimiento</label>
+                                <input type="date" class="form-control" id="birtdate" placeholder="">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="documenttype" class="form-label">
+                                    Documento de
+                                    identidad</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <select class="form-select" aria-label="-" id="documenttype">
+                                            <option value="1">DNI</option>
+                                            <option value="2">CE</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" id="document"
+                                            placeholder="Número de documento">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn btn-outline-purple" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-purple">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="niubizModal" tabindex="-1" aria-labelledby="niubizModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5" id="niubizModalLabel">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./assets/niubiz.jpg" alt="Niubiz">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
