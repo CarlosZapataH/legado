@@ -69,6 +69,20 @@ module.exports = {
       filename: 'carrito.html', // output file
       //chunks: ["nameB"],
     }),
+    new HtmlWebpackPlugin({
+      title: 'Registro',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/registro.html', // template file
+      filename: 'registro.html', // output file
+      //chunks: ["nameB"],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Gracias',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/gracias.html', // template file
+      filename: 'gracias.html', // output file
+      //chunks: ["nameB"],
+    }),
 
     new webpack.ProvidePlugin({
       $: 'jquery',

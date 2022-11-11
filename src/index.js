@@ -2,6 +2,9 @@
 import '@/styles/main.scss'
 import '@/styles/event.scss'
 import '@/styles/car.scss'
+import '@/styles/register.scss'
+import '@/styles/thanks.scss'
+
 require('bootstrap-icons/font/bootstrap-icons.css')
 import * as bootstrap from 'bootstrap'
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body class="thanks">
+  <!-- <div id="root">
+      <h1>darta</h1>
+    </div> -->
+  <header class="header">
+    <div class="x-container">
+      <div class="content">
+        <div class="content__left">
+          <img src="./assets/Legado_Logo_nuevo-sm.png" alt="Ceregen logo" />
+        </div>
+        <div class="content__right">
+          <div class="hamburguesa only-mobile" id="hamburguesa"><span></span></div>
+          <nav class="only-desktop">
+            <a href="#estrategia" class="scrolling">LEGADO</a>
+            <a href="#quehacemos" class="scrolling">SEDES</a>
+            <a href="#proyectos" class="scrolling">NOTICIAS</a>
+            <a href="#clientes" class="scrolling">EVENTOS</a>
+            <!-- <a href="tel:+012535303">
+                <b>Neosalud: 01 253 5303</b>
+              </a> -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="menu only-mobile" id="menu">
+    <nav>
+      <a href="#estrategia" class="scrolling">LEGADO</a>
+      <a href="#quehacemos" class="scrolling">SEDES</a>
+      <a href="#proyectos" class="scrolling">NOTICIAS</a>
+      <a href="#clientes" class="scrolling">EVENTOS</a>
+    </nav>
+  </section>
+  <div class="wrapper_sections">
+    <section class="banner" id="banner">
+      <div class="x-container">
+        <div class="box-content">
+          <img class="banner" src="" alt="" />
+          <div class="box">
+            <div class="box__img">
+              <img src="./assets/aplauso.png" alt="Alentar">
+            </div>
+            <div class="box__text">
+              <h1 class="title">¡Gracias por registrarte!</h1>
+              <p class="description">
+                Ahora podrás acceder más facilmente a tus tickets y hacer nuevas compras.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="buttons">
+      <a href="" class="btn-outline-purple">
+        <i class="bi bi-ticket-perforated"></i>
+        Ver mis entradas
+      </a>
+      <a href="" class="btn-text-purple">
+        Volver al inicio
+      </a>
+    </section>
+  </div>
+</body>
+
+</html>
