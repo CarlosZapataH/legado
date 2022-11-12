@@ -1,6 +1,7 @@
 // Test import of styles
 import '@/styles/main.scss'
 import '@/styles/event.scss'
+import '@/styles/events.scss'
 import '@/styles/car.scss'
 import '@/styles/register.scss'
 import '@/styles/thanks.scss'

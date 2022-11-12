@@ -1,0 +1,136 @@
+@import 'index.scss';
+.register {
+  .banner {
+    position: relative;
+    background-color: #d0f3ff;
+    @include md {
+      background-color: initial;
+    }
+    .box-content {
+      position: relative;
+      min-height: 362px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+
+      .box {
+        display: flex;
+        align-items: center;
+        @include md {
+          flex-direction: column;
+        }
+        &__img {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          margin-right: 46px;
+
+          @include md {
+            width: 100%;
+            padding-top: 110px;
+            margin: 0 0 50px 0;
+          }
+          &::before {
+            @include md {
+              content: '';
+              width: 100vw;
+              height: 100vh;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              background-color: #f5fff7;
+            }
+          }
+
+          img {
+            height: 200px;
+            width: auto;
+            object-fit: cover;
+            z-index: 1;
+          }
+        }
+        &__text {
+          margin-right: 60px;
+          overflow: hidden;
+          color: #002950;
+          .title {
+            max-width: 218px;
+            color: #295eaa;
+            font: 600 24px/28px $font-family;
+            margin-bottom: 12px;
+            @include md {
+              max-width: initial;
+            }
+          }
+          .description {
+            max-width: 292px;
+            color: #002950;
+            font: 400 16px/20px $font-family;
+            @include md {
+              max-width: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 0;
+    @include md {
+      padding: 40px 0;
+    }
+    h2 {
+      color: #002950;
+      margin-bottom: 24px;
+      font: 500 24px/28px $font-family;
+    }
+    p {
+      color: #002950;
+      margin-bottom: 24px;
+      font: 400 16px/20px $font-family;
+    }
+    .form-content {
+      width: 100%;
+      max-width: 712px;
+      margin: 0 auto;
+    }
+    .btn-text {
+      display: inline-block;     
+      cursor: pointer;
+      color: #b1007a;
+      font: 500 16px/20px $font-family;
+      text-decoration: none;
+    }
+    // .btn-outline-purple {
+    //   display: inline-block;
+    //   padding: 14px 84px;
+    //   cursor: pointer;
+    //   color: #b1007a;
+    //   font: 600 16px/20px $font-family;
+    //   border: 2px solid #b1007a;
+    //   border-radius: 8px;
+    //   text-decoration: none;
+    //   margin-bottom: 18px;
+    //   i {
+    //     margin-right: 12px;
+    //   }
+    // }
+    // .btn-text-purple {
+    //   display: inline-block;
+    //   padding: 14px 84px;
+    //   cursor: pointer;
+    //   color: #b1007a;
+    //   font: 600 16px/20px $font-family;
+    //   text-decoration: none;
+    //   i {
+    //     margin-right: 12px;
+    //   }
+    // }
+  }
+}

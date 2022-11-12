@@ -7,6 +7,12 @@
 @import 'scaffolding';
 @import 'mixins';
 //@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import "~bootstrap/scss/bootstrap";
-//@import "~bootstrap/scss/grid";
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
 
+$btn-font-family: $font-family;
+$theme-colors: (
+  primary: #b1007a,
+);
+@import '~bootstrap/scss/bootstrap';
+//@import "~bootstrap/scss/grid";
