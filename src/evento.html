@@ -33,9 +33,26 @@
                         <a href="#quehacemos" class="scrolling">SEDES</a>
                         <a href="#proyectos" class="scrolling">NOTICIAS</a>
                         <a href="#clientes" class="scrolling">EVENTOS</a>
-                        <!-- <a href="tel:+012535303">
-                <b>Neosalud: 01 253 5303</b>
-              </a> -->
+                        <div class="avatar">
+                            <div class="dropdown">
+                                <div class="avatar-circle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">RB</div>
+                                <ul class="avatar-list dropdown-menu">
+                                    <li> <a class="dropdown-item" href="#">
+                                            <i class="bi bi-person"></i>
+                                            Mi perfil
+                                        </a> </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-ticket-perforated"></i>
+                                            Mis tickets
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-box-arrow-left"></i>
+                                            Cerrar sesión
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -111,6 +128,10 @@
                                             <button class="button-x" type="button" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal">
                                                 Comprar
+                                            </button>
+                                            <button class="button-x mt-2" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#addUserLogin">
+                                                Comprar logueado
                                             </button>
                                         </div>
                                     </div>
@@ -242,7 +263,8 @@
     <!-- Button trigger modal -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="guest modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -364,6 +386,108 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn btn-outline-purple" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-purple">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="logued modal fade" id="addUserLogin" tabindex="-1" aria-labelledby="addUserLoginLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="addUserLoginLabel">Registro de participantes</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pa-2">
+                    <div class="box-users">
+                        <div class="box-users__title">
+                            Participantes Guardados
+                        </div>
+                        <hr>
+                        <div class="box-users__list">
+                            <div class="user d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="user-name">Alberto Sanchez Baudazio </div>
+                                    <div class="user-document">12345678</div>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" id="cbox1">
+                                    <label for="cbox1"><i class="bi bi-check-lg"></i></label>
+                                </div>
+                            </div>
+                            <div class="user d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="user-name">Juan Sanchez Baudazio </div>
+                                    <div class="user-document">12345678</div>
+                                </div>
+                                <div class="input-check">
+                                    <input type="checkbox" id="cbox2">
+                                    <label for="cbox2"><i class="bi bi-check-lg"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <button class="button-circle" id="btn-add-user">
+                            <span class="circle">
+                                <i class="bi bi-person-plus"></i>
+                            </span>
+                            <span class="text">Agregar nuevo</span>
+                        </button>
+                    </div>
+                    <div class="box-form">
+                        <button class="btn-back" id="btn-back">
+                            <i class="bi bi-chevron-left"></i>
+                            <span class="text">Volver</span>
+                        </button>
+                        <div class="box-form__title">
+                            <i class="bi bi-person"></i>
+                            <span class="text">Nuevo participante</span>
+                        </div>
+                        <form class="box-form__register">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <label for="birtdate" class="form-label">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control" id="birtdate" placeholder="">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <label for="lastname" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-4">
+                                    <label for="documenttype" class="form-label">Documento de
+                                        identidad</label>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <select class="form-select" aria-label="-" id="documenttype">
+                                                <option value="1">DNI</option>
+                                                <option value="2">CE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" id="document"
+                                                placeholder="Número de documento">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="button" class="btn-text-purple" id="btn-save-user">
+                                        Guardar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn btn-outline-purple" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
                 </div>
             </div>
         </div>

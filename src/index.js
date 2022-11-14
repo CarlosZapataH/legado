@@ -6,6 +6,8 @@ import '@/styles/car.scss'
 import '@/styles/register.scss'
 import '@/styles/thanks.scss'
 
+import '@/js/event.js'
+
 require('bootstrap-icons/font/bootstrap-icons.css')
 import * as bootstrap from 'bootstrap'
 

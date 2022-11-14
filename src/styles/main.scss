@@ -86,6 +86,33 @@ body {
       }
     }
     &__right {
+      .avatar {
+        &-circle {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: #295eaa;
+          font: 500 15px/20px $font-family;
+          color: white;
+        }
+        &-list {
+          background-color: #0e2860;
+          a {
+            color: white;
+            padding: 18px 24px;
+            font: 400 16px/20px $font-family;
+            &:hover {
+              background-color: rgba(14, 40, 96, 0.7);
+            }
+            i {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
       nav {
         display: flex;
         align-items: center;
